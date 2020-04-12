@@ -539,6 +539,8 @@ font-size: 10px;
     justify-content: space-around;
     align-content: center;
   }
+  svg{
+    width:400px;
 }
 @media (max-width: 768px) {
 }
