@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/—Pngtree—classic old luxury car design_4308914.png" type="image/png" sizes="16x16">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="title">Welcome buddy</div>
+      <div class="links">
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
+      </div>
+    </div>
+
+    <div class="container1">
+      <!-- <div class="images">
+        <img src="images/harley-davidson-YsMg1pJqqKk-unsplash.jpg" alt="">
+        <img src="images/logan-weaver-mXDYcXjLcBI-unsplash.jpg" alt="">
+        <img src="images/max-andrey-l27J6Dmrjlg-unsplash.jpg" alt="">
+      </div> -->
+      <div class="container1-1">
+        <div class="a">
+          <h1 id="name">T Meher Sai Ram</h1>
+          <p>I am a web developer till date...</p>
+          <p>Cool stuffs can be made with cool hands</p>
+        </div>
+      </div>
+      
+    <div class="container2"></div>
+  
+
+    </div>
+    
+
+    
+
+
+    <div class="container3">
+      <div class="images">
+       <div class="image1">
+
+        <div class="img1">
+          <img src="images/harley-davidson-YsMg1pJqqKk-unsplash.jpg" alt="a" />
+          <p>This is a cool pic1 , i just uploaded as it is good</p>
+        </div>
+        <div class="img2">
+          <img src="images/logan-weaver-mXDYcXjLcBI-unsplash.jpg" alt="b" />
+          <p>This is a cool pic2</p>
+        </div>
+        <div class="img3">
+          <img src="images/max-andrey-l27J6Dmrjlg-unsplash.jpg" alt="d" />
+          <p>This is a cool pic3</p>
+        </div>
+       </div>
+       <div class="image2">
+
+        <div class="img4">
+          <img src="images/harley-davidson-wdc9ZAiwBB4-unsplash.jpg" alt="e" />
+          <p>This is a cool pic3</p>
+        </div>
+        <div class="img5">
+          <img src="images/intro-bg_1 (2).jpg" alt="f" />
+          <p>This is a cool pic3</p>
+        </div>
+        <div class="img6">
+          <img src="images/will-walker-7ZxdrF6MbJU-unsplash.jpg" alt="c" />
+          <p>This is a cool pic3</p>
+        </div>
+       </div>
+      </div>
+       <button id="seemore" onclick="imageslide()">see more pecs</button>
+
+
+
+    </div>
+    <div class="container4" onmouseover="a(thi)">
+      <div class="container4-1">
+        <div class="about">
+  There is not much about say about me.I am a full stack developer with self trained knowledge.
+  My name is T Meher Sai Ram. I am a student always and will be having the same eager to learn new things .
+  I deveoped this simple portofolio page on april 5 twenty twenty . I leave in india .
+  I involved in developing since i was in my second year of my college.
+  And that's all the journey started ...
+
+
+        </div>
+        <div class="about-img">
+          <img src="images/myimage1.jpg" alt="myimage1" />
+        </div>
+      </div>
+    </div>
+    <svg height="200" width="inherit" style="background-color: #ff5500;">
+   
+      <polyline points="40,0 180,180 1000,0 1180,40  1270,0"
+      style="fill:#2c3e50;stroke:black;stroke-width:1;" />
+    
+    </svg>
+    <footer class="footer">
+      Copyright © Myportfolio. All Rights Reserved | Contact Us: +91 8480786079
+    </footer>
+  </body>
+  <script>
+    function a(e) {}
+
+    var text="T Meher Sai Ram";
+    position=-1;
+    document.getElementById("name").innerHTML="";
+var set_interval=setInterval(function()
+{
+  position++;
+ if(position>=text.length)
+ {
+   clearInterval(set_interval);
+ }
+ document.getElementById("name").innerHTML+=text.charAt(position);
+},100);
+
+flag2=true;
+flag=true;
+ function imageslide()
+{  
+  flag2=false;
+  if(flag==true)
+  {
+  document.querySelector(".image1").style.transition="all 1000ms ease-in-out";
+  document.querySelector(".image1").style.position="absolute";
+  document.querySelector(".image1").style.left="100%";
+
+  document.querySelector(".image2").style.transition="all 1000ms ease-in-out";
+  document.querySelector(".image2").style.position="relative";
+  document.querySelector(".image2").style.left="0%";
+  }
+  else{
+    document.querySelector(".image1").style.transition="all 1000ms ease-in-out";
+  document.querySelector(".image1").style.position="relative";
+  document.querySelector(".image1").style.left="0%";
+
+  document.querySelector(".image2").style.transition="all 1000ms ease-in-out";
+  document.querySelector(".image2").style.position="absolute";
+  document.querySelector(".image2").style.left="100%";
+  flag2=!flag2;
+  }
+flag=!flag;
+
+}
+
+window.onscroll=function(){
+
+scrollfunction();
+
+};
+function scrollfunction()
+{  if(flag2==true)
+{   
+ 
+  if(document.body.scrollTop >600 || document.documentElement.scrollTop >600)
+  {
+    document.querySelector(".image1").style.transition="all 1000ms ease-in-out";
+  document.querySelector(".image1").style.position="absolute";
+  document.querySelector(".image1").style.left="12%";
+  }
+  else{
+    document.querySelector(".image1").style.transition="all 1000ms ease-in-out";
+  document.querySelector(".image1").style.position="absolute";
+  document.querySelector(".image1").style.left="100%";
+  }
+}
+}
+window.onload=function(){
+  loadfunction();
+}
+function loadfunction()
+{
+  document.querySelector("body").style.transition="opacity 300ms ease-in-out";
+  document.querySelector("body").style.opacity="0.9";
+}
+  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.13.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</html>
